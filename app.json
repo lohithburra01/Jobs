@@ -1,0 +1,91 @@
+{
+  "company_name": "Heerema",
+  "resume": {
+    "summary": "AI and Automation Engineer who turns manual, judgment-heavy processes into reliable tools other people can run without him. Deep Python: packages, generators, HTTP and CLI surfaces, deterministic validation layers and test harnesses, built inside stacks chosen by someone else rather than rewritten. Mechanical engineering undergraduate, MS in Data Science. EU Chancenkarte visa, authorised to work in the EU immediately, no sponsorship required.",
+    "skills": [
+      {
+        "label": "Python & Packaging",
+        "value": "Python 3.11, package and framework design, FastAPI, http.server with ThreadingHTTPServer, argparse, JSON Schema, pytest, unittest, custom test runners, Docker"
+      },
+      {
+        "label": "AI & Agents",
+        "value": "Claude API, Gemini, LangGraph, MCP tools, RAG, pgvector, embeddings, structured output and schema constraint, LLM benchmarking and cost measurement"
+      },
+      {
+        "label": "Automation & Orchestration",
+        "value": "n8n (23+ workflows, 2 production systems), workflow generation from Python, GitHub Actions CI, REST API integration, webhooks, Airtable API, Google Drive API"
+      },
+      {
+        "label": "Data & Platform",
+        "value": "Apache Spark, PySpark, ETL pipelines, AWS (S3, Lambda, Glue), PostgreSQL, MySQL, TypeScript, Next.js, Vercel"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Manager, AI & Automation",
+        "company": "Corominas Consulting - Remote, Germany",
+        "period": "Jun 2026 - Sep 2026",
+        "bullets": [
+          "Built a config-driven multi-tenant engine in Python that turned a manual judgment-heavy process into an unattended pipeline: 8 stages exposed as both a CLI and an HTTP surface, per-instance behaviour carried in configuration rather than code branches, state written atomically under a lock",
+          "Wrote the deterministic validation layer that makes generated output safe to ship: checks in 10 families written against the artefact rather than the generator, so swapping the model does not invalidate them, backed by 715 assertion calls across 33 test scripts. Graded 9 models over 40 human-labelled items and moved production onto one costing $0.0109 against a $1.149 reference",
+          "Treated orchestration as generated infrastructure rather than hand-built console state: four Python generators emit and maintain 26 workflow definitions totalling 490 nodes, reading templates and logic from the real source modules at build time so orchestrator and package cannot drift, with a validator refusing any artefact whose connections do not hold",
+          "Built the enablement layer, not just the code: reusable per-instance scaffolding, a preflight readiness script naming each missing item mechanically, and contract tests that fail when a rule is traded away"
+        ]
+      },
+      {
+        "title": "AI Automation Developer",
+        "company": "Formula Dream - Remote | Contract",
+        "period": "Aug 2025 - Jun 2026",
+        "bullets": [
+          "Built an end-to-end unattended pipeline: self-scheduling Python render jobs on GitHub Actions writing outputs under a filename contract, feeding a 21-node orchestration with dual triggers, an event trigger plus an hourly sweep, so nothing is missed and nothing fails silently",
+          "Made retries safe by establishing idempotency first: outputs marked with custom properties for dedup, every service-facing HTTP node retrying 3 times with backoff, failures emailing the exact node and execution link",
+          "Built a meta-layer on top of the orchestrator: a generator emitting complete importable workflow JSON pre-configured for the target credentials, idea to running workflow in under 10 minutes"
+        ]
+      },
+      {
+        "title": "AI Engineer",
+        "company": "Think Round Inc - Remote, US",
+        "period": "Apr 2025 - Mar 2026",
+        "bullets": [
+          "Built a production conversational system in Python and TypeScript with memory persistence, confidence scoring and multi-layered safety controls over LLM output, on a multi-agent architecture supporting parallel development across three use cases on one shared foundation"
+        ]
+      },
+      {
+        "title": "Program Analyst",
+        "company": "Cognizant Technology Solutions - India",
+        "period": "Feb 2022 - Aug 2023",
+        "bullets": [
+          "Built automated ingestion pipelines in Python and Apache Spark processing 50M+ rows daily, cutting data-to-KPI latency from 48 hours to 2",
+          "Optimised ETL workflows on AWS (S3, Lambda, Glue), measurably reducing infrastructure cost"
+        ]
+      }
+    ],
+    "projects": [
+      {
+        "name": "SceneAgent - Input-agnostic 3D scene intelligence pipeline",
+        "period": "Apr 2026",
+        "bullets": [
+          "Video, photos, point cloud, BIM or a pre-trained splat in, a semantically queryable scene out: segmentation, backprojection and DBSCAN clustering detecting 151 objects, with a LangGraph agent exposing scene operations as MCP tools and the scene queried from the backend rather than carried in context. FastAPI, Next.js, pgvector, Kubernetes. Built in 48 hours"
+        ]
+      }
+    ],
+    "education": [
+      {
+        "degree": "MS Data Science, Stevens Institute of Technology, USA (2025)",
+        "school": "BTech Mechanical Engineering, JNTU K, India",
+        "year": "2022"
+      }
+    ]
+  },
+  "cover_letter": {
+    "date": "August 26, 2026",
+    "company_address": "Heerema Marine Contractors\nLeiden, Netherlands",
+    "salutation": "Hi Heerema,",
+    "paragraphs": [
+      "Your posting describes the gap I have spent the last year standing in: engineers with good ideas on one side, a digital landscape that has to stay scalable on the other, and someone in the middle deciding what becomes a reusable module and what stays inside the discipline. I came into Python and automation from mechanical engineering, and the Lego-blocks framing is exactly how I have been building.",
+      "At Corominas Consulting I owned the automation layer across a portfolio of roughly 85 client systems. The core is a config-driven Python engine where behaviour lives in configuration rather than code branches, callable by a person or an orchestrator. In front of the generated output sits a deterministic checker written against the artefact rather than the generator, so changing the model does not invalidate it, with 715 assertion calls across 33 test scripts behind it. The part closest to your flywheel is the generation layer: four Python generators emit and maintain 26 workflow definitions totalling 490 nodes, reading templates from the real source modules at build time so orchestrator and package cannot drift. Onboarding a new instance became one command instead of a hand-edit of an eighteen-node canvas.",
+      "The enablement half is the part I enjoy. I co-owned a repository with a domain lead who owned the subject matter while I built the automation that runs his work, then built automation inside his components so each self-encapsulates and the outer pipeline consumes it as a single unit. Around that I wrote a readiness script that answers mechanically whether an instance is safe to switch on, and contract tests that fail when a rule gets traded away. I am also good at the failure mode that looks like success: a run cap applied to the wrong side of a filter left instances producing zero output forever with the log green.",
+      "On the future-ready side, SceneAgent turns video, photos, point clouds, BIM or a splat into a semantically queryable scene, with a LangGraph agent reaching it through MCP tools and pgvector behind it, so retrieval over structured expertise is familiar ground. I hold an EU Chancenkarte visa and can work in the EU immediately, no sponsorship required. Reach me at burralohith01@gmail.com or +49 1573 7742759."
+    ]
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "company_name": "Teamtailor",
+  "resume": {
+    "summary": "AI practitioner who builds agents, automations, and workflows that change how real work gets done - then systematically scales what works. Track record of going from workflow analysis to working proof-of-concept in hours, not weeks. Deep hands-on experience with Claude, Claude Code, LangGraph, n8n, FastAPI, and the full modern AI stack. Builds in real time alongside the people being supported. EU Chancenkarte visa - authorized to work in Germany/EU immediately, no sponsorship required.",
+    "skills": [
+      {"label": "AI & Agents", "value": "LangGraph, Claude API, Claude Code, OpenAI API, MCP tools, n8n, RAG pipelines, pgvector, multi-agent workflows, prompt engineering, automation design"},
+      {"label": "Python & Backend", "value": "Python (strong), FastAPI, TypeScript, REST API integrations, backend services"},
+      {"label": "Workflow Automation", "value": "n8n, GitHub Actions CI/CD, event-triggered pipelines, process mapping, workflow transformation"},
+      {"label": "Cloud & Infra", "value": "AWS (S3, Lambda, Glue), Docker, Kubernetes, Git"},
+      {"label": "Enablement & Delivery", "value": "cross-functional collaboration, requirements gathering, documentation, playbook development, stakeholder communication"},
+      {"label": "Tools", "value": "Cursor, JIRA, Confluence, Notion, Slack, Figma, agile workflows"}
+    ],
+    "experience": [
+      {
+        "title": "AI Pipeline Developer",
+        "company": "Formula Dream / Formula Neon - Remote",
+        "period": "Aug 2025 - Present",
+        "bullets": [
+          "Sat with the content team, mapped the full manual workflow end-to-end, identified highest-leverage transformation points, then built: event detection, API ingestion, headless rendering, LLM inference, n8n orchestration, multi-platform auto-publish - zero manual steps",
+          "Built F1 race weekend template system as a reusable pattern - same architecture now scales to any recurring event type without rebuilding",
+          "Documented workflow transformation so it could be replicated - 176K+ followers, 282K likes single reel, 1M+ combined audience"
+        ]
+      },
+      {
+        "title": "AI Engineer",
+        "company": "Think Round Inc (ThinkLife) - Remote",
+        "period": "Apr 2025 - Present",
+        "bullets": [
+          "Partnered with product and operational teams to identify workflow transformation opportunities - built working proof-of-concepts in days, then scaled to production",
+          "Built ThinkLife multi-agent platform: reusable agent components, shared infrastructure, evaluation framework - coached team through adoption from first win to self-sufficiency",
+          "Documented tools and patterns so other teams could access and reuse without rebuilding from scratch"
+        ]
+      },
+      {
+        "title": "Technical Artist Intern",
+        "company": "Formula Addict - Remote",
+        "period": "Jan 2025 - Mar 2025",
+        "bullets": [
+          "Identified automation opportunities in live broadcast workflows, built Python tooling that eliminated manual steps - showed working solution same day, not a deck about what was possible"
+        ]
+      },
+      {
+        "title": "Program Analyst",
+        "company": "Cognizant Technology Solutions - India",
+        "period": "Feb 2022 - Aug 2023",
+        "bullets": [
+          "Worked cross-functionally to redesign reporting workflows - Python/Spark pipelines, AWS infrastructure, 48hr to 2hr latency reduction with documented handoffs"
+        ]
+      }
+    ],
+    "projects": [
+      {
+        "name": "SceneAgent - Agentic AI Platform",
+        "period": "Apr 2026",
+        "bullets": [
+          "Identified gap, built working proof-of-concept, shipped to production in 48 hours: LangGraph agent, MCP tools, pgvector RAG, FastAPI, Docker, Kubernetes",
+          "Designed as a reusable pattern - same architecture works across commercial, residential, retail, industrial domains"
+        ]
+      },
+      {
+        "name": "ThinkLife Multi-Agent Platform",
+        "period": "Apr 2025 - Present",
+        "bullets": [
+          "Reusable agent playbook adopted across 4 agent types - documented, templated, and scaled beyond the original build team"
+        ]
+      }
+    ],
+    "education": [
+      {
+        "degree": "Master of Science - Data Science",
+        "school": "Stevens Institute of Technology",
+        "year": "2025"
+      },
+      {
+        "degree": "Bachelor of Technology - Mechanical Engineering",
+        "school": "JNTU K",
+        "year": "2022"
+      }
+    ]
+  },
+  "cover_letter": {
+    "date": "May 18, 2026",
+    "company_address": "Teamtailor\nCorporate Development Team",
+    "salutation": "Hi Teamtailor,",
+    "paragraphs": [
+      "I would rather show someone a working proof-of-concept on their actual deliverable today than present a polished deck about what is theoretically possible next quarter. That is not a value I am adopting for this role - it is how I have operated on every project I have shipped.",
+      "At Formula Dream I sat with the content team, mapped the full manual workflow - race event to published post - identified the highest-leverage transformation points, and built the replacement: event detection, API ingestion, headless rendering, LLM inference, n8n orchestration, auto-publish across platforms. Zero manual steps. Then I documented it as a reusable pattern so the same architecture could scale to any recurring event without rebuilding. At Think Round Inc I partnered with product and operational teams, built working agents in days, coached the team through adoption from first win to self-sufficiency, and documented the tools and patterns so other teams could access them without starting from scratch. SceneAgent: identified a gap, shipped a working agentic platform in 48 hours, designed as a reusable pattern across multiple domains.",
+      "I am a pattern recogniser. When something works for one workflow, I immediately see how it applies to others. I build in real time alongside people. I use Claude Code and Cursor daily. I explain technical concepts clearly to non-technical stakeholders - because the adoption side matters as much as the build side.",
+      "I am based in Heilbronn, Germany, authorized to work in the EU immediately on a Chancenkarte visa - no sponsorship needed. Lohith Burra | burralohith01@gmail.com | linkedin.com/in/lohithburra | lohithburra.framer.website"
+    ]
+  }
+}

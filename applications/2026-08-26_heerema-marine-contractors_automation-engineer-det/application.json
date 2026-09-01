@@ -1,0 +1,85 @@
+{
+  "company_name": "Heerema Marine Contractors",
+  "resume": {
+    "summary": "Automation engineer who turns manual, judgment-heavy engineering work into reusable Python packages with tests, validation and documentation, built to run unattended and to fail loudly rather than silently. Writes the code, and enables non-specialists to write their own. Mechanical engineering background, MS in Data Science, hands-on RAG and agent stack.",
+    "skills": [
+      {"label": "Python", "value": "packages, code generators, FastAPI, CLI tooling, automated test suites, JSON-schema validation"},
+      {"label": "AI & Retrieval", "value": "Claude API, Gemini, LangGraph, MCP tools, RAG, pgvector, local embeddings, LLM benchmarking"},
+      {"label": "Automation", "value": "n8n (23+ workflows), workflow generators, GitHub Actions CI/CD, REST APIs, idempotency design"},
+      {"label": "Infra & Data", "value": "Docker, Kubernetes, PostgreSQL, TypeScript, Apache Spark, PySpark, ETL, AWS (S3, Lambda, Glue)"}
+    ],
+    "experience": [
+      {
+        "title": "Manager, AI & Automation",
+        "company": "Corominas Consulting - Remote, Germany",
+        "period": "Jun 2026 - Sep 2026",
+        "bullets": [
+          "Owned the automation layer across roughly 85 deployments: built the shared Python packages each one composes, with per-deployment behaviour in configuration rather than code branches, so a new environment is a config change and not a rebuild",
+          "Generated orchestration instead of hand-building it: 26 workflow definitions, 490 nodes, the production ones emitted by Python generators, so a policy change is a reviewable diff of a generator rather than of a 48 KB JSON blob",
+          "Wrote the deterministic validation layer that makes automated output safe to ship unreviewed: 18 checks across 10 families, backed by 715 assertion calls across 33 test scripts",
+          "Engineered for unattended operation: idempotency before retries, 3 tries with a 300-second timeout across 137 service-facing calls, every destructive path dry-run by default with snapshot and revert",
+          "Enabled a non-specialist colleague to ship their own automation: the domain lead authored the domain logic, I built the runtime that executes it, then pushed automation inside those units so each self-encapsulates"
+        ]
+      },
+      {
+        "title": "AI Automation Developer",
+        "company": "Formula Dream - Remote | Contract",
+        "period": "Aug 2025 - Jun 2026",
+        "bullets": [
+          "Built an unattended pipeline end to end: GitHub Actions running self-scheduling Python render jobs into a 21-node orchestration workflow with dual triggers, idempotent deduplication, retry with backoff, and failure mail naming the exact node",
+          "Built a meta-tool so others could build too: Claude generates complete importable workflow definitions pre-configured for the target credential setup, idea to running workflow in under 10 minutes. 23+ workflows built"
+        ]
+      },
+      {
+        "title": "AI Engineer",
+        "company": "Think Round Inc - Remote, US",
+        "period": "Apr 2025 - Mar 2026",
+        "bullets": [
+          "Built a production conversational AI system with memory persistence, confidence scoring and multi-layered deterministic safety controls, on a multi-agent architecture supporting parallel development of independent agents on shared infrastructure"
+        ]
+      },
+      {
+        "title": "Program Analyst",
+        "company": "Cognizant Technology Solutions - India",
+        "period": "Feb 2022 - Aug 2023",
+        "bullets": [
+          "Built Python and Apache Spark ingestion pipelines processing 50M+ rows daily, cut data-to-KPI latency from 48 hours to 2 hours, and optimised ETL on AWS (S3, Lambda, Glue) with measurable cost reduction"
+        ]
+      }
+    ],
+    "projects": [
+      {
+        "name": "SceneAgent - Queryable 3D Scene Intelligence",
+        "period": "Apr 2026 | github.com/lohithburra01/sceneagent",
+        "bullets": [
+          "Built in 48 hours. Point cloud, photos or BIM in, semantically queryable scene out: segmentation, backprojection and DBSCAN clustering resolved 151 distinct objects",
+          "Geometry exposed as atomic tools an agent calls over MCP: locate by natural language, measure distances, plan a route. FastAPI, pgvector, Docker, Kubernetes"
+        ]
+      }
+    ],
+    "education": [
+      {
+        "degree": "Master of Science - Data Science",
+        "school": "Stevens Institute of Technology, USA",
+        "year": "2025"
+      },
+      {
+        "degree": "Bachelor of Technology - Mechanical Engineering",
+        "school": "JNTU K, India",
+        "year": "2022"
+      }
+    ]
+  },
+  "cover_letter": {
+    "date": "August 26, 2026",
+    "company_address": "Heerema Marine Contractors\nIT & Digital - Digital Enablement Team\nLeiden, Netherlands",
+    "salutation": "Hi Heerema Marine Contractors,",
+    "paragraphs": [
+      "Most automation stops at the part that produces the answer. The interesting problem is everything around it: what validates the output before anyone trusts it, what happens when it fails at 3am with nobody watching, and whether the next engineer reuses the pieces or rebuilds them. That is this role: build the Lego blocks, then make sure the people building the vehicles can actually use them.",
+      "At Corominas Consulting I owned the automation layer across roughly 85 deployments, building the shared Python packages each one composes, with behaviour carried in configuration rather than code branches so a new environment is a config change instead of a rebuild. I generated the orchestration instead of hand-building it: 26 workflow definitions and 490 nodes emitted by Python generators, so a policy change is a reviewable diff. These run unattended, so I wrote the deterministic validation layer that decides whether output is safe to ship at all: 18 checks across 10 families, backed by 715 assertion calls across 33 test scripts. Idempotency went in before retries did, and every destructive path is dry-run by default with snapshot and revert.",
+      "The enablement half is the part I enjoy most. I co-owned a repository with a domain lead who is not a software engineer: they authored the domain logic, I built the runtime that executes it, then pushed automation inside those units so each one self-encapsulates and the outer workflow consumes it as one block. They kept ownership of their work, and it got more reliable. At Formula Dream I built a meta-tool that generates importable workflow definitions pre-wired to a credential setup, taking an idea to a running workflow in under 10 minutes.",
+      "My first degree is mechanical engineering, so decomposing a physical problem into clean atomic functions is familiar ground rather than a stretch. SceneAgent, built in 48 hours, is that exercise: a point cloud goes in, DBSCAN clustering resolves 151 objects, and the geometry comes back out as atomic MCP tools an agent calls to locate something by description, measure a distance or plan a route, backed by pgvector and local embeddings.",
+      "I speak and write English at C2 and hold an EU Chancenkarte visa, so I am authorised to work in the Netherlands immediately with no sponsorship required."
+    ]
+  }
+}
