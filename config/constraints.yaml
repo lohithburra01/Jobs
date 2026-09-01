@@ -1,0 +1,14 @@
+salary_floor_eur: 65000
+countries: [remote, NL, SE, DK, FI, "NO", AT, DE, CZ, PL]
+working_languages: [en, de]
+min_employees: 100
+target_titles:
+  - AI Engineer
+  - Automation Engineer
+  - AI Automation Engineer
+  - Agentic AI Developer
+  - Forward Deployed Engineer
+  - Solutions Engineer
+  - GTM Engineer
+  - Head of Automation
+url_strip_params: [gh_src, ref, source, trk, sessionid, jobsid]
