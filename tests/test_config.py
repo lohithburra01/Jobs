@@ -41,3 +41,10 @@ def test_slice_hash_changes_only_with_named_keys(tmp_path: Path):
     unrelated = cfg.slice_hash(["scoring.threshold"])
     assert before != after
     assert unrelated == cfg.slice_hash(["scoring.threshold"])
+
+def test_real_config_loads():
+    repo_root = Path(__file__).resolve().parents[1]
+    cfg = load_config(repo_root)
+    assert "NO" in cfg.constraints.countries
+    assert all(isinstance(c, str) for c in cfg.constraints.countries)
+    assert all(isinstance(lang, str) for lang in cfg.constraints.working_languages)
